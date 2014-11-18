@@ -10,5 +10,8 @@ router.get('/', function(req, res) {
   //res.render('index', { title: 'Express' });
   res.sendfile(path.resolve(viewDir,'index.html'));
 });
+router.get('/lastenkirjoja', function(req, res) {
+  res.sendfile(path.resolve(viewDir,'lastenkirjoja.html'));
+});
 
 module.exports = router;
