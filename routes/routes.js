@@ -13,5 +13,14 @@ router.get('/', function(req, res) {
 router.get('/lastenkirjoja', function(req, res) {
   res.sendfile(path.resolve(viewDir,'lastenkirjoja.html'));
 });
+router.get('/romaaneja', function(req, res) {
+  res.sendfile(path.resolve(viewDir,'romaaneja.html'));
+});
+router.get('/tietokirjoja', function(req, res) {
+  res.sendfile(path.resolve(viewDir,'tietokirjoja.html'));
+});
+router.get('/kaikki', function(req, res) {
+  res.sendfile(path.resolve(viewDir,'kaikki.html'));
+});
 
 module.exports = router;
