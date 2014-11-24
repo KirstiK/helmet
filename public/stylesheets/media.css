@@ -36,7 +36,13 @@ body, h1, h2, h3, h4, h5, h6 {
 .feature-photo {
   width: 100%;
 }
-
+.img-circle{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    display:block;
+    background-position-y:25% 
+}
 .feature-text h3 {
   margin: 0;
   font-size: 2em;
