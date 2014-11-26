@@ -8,19 +8,19 @@ var viewDir = '/Users/Kirsti/Documents/Koodi/helmet/views';
 /* GET home page. */
 router.get('/', function(req, res) {
   //res.render('index', { title: 'Express' });
-  res.sendFile(path.resolve(viewDir,'index.html'));
+  res.render('index', {title: 'Alkusivu'});
 });
 router.get('/lastenkirjoja', function(req, res) {
-  res.sendFile(path.resolve(viewDir,'lastenkirjoja.html'));
+  res.render('lastenkirjoja');
 });
 router.get('/romaaneja', function(req, res) {
-  res.sendFile(path.resolve(viewDir,'romaaneja.html'));
+  res.render('romaaneja');
 });
 router.get('/tietokirjoja', function(req, res) {
-  res.sendFile(path.resolve(viewDir,'tietokirjoja.html'));
+  res.render('tietokirjoja');
 });
 router.get('/kaikki', function(req, res) {
-  res.sendFile(path.resolve(viewDir,'kaikki.html'));
+  res.render('kaikki');
 });
 
 module.exports = router;
